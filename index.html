@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Girishkaushik Karthikeyan</title>
+  <meta name="description" content="Girishkaushik Karthikeyan — graduate researcher at UT Austin building AI agents for long videos; former software engineer at Standard Chartered.">
+  <meta name="theme-color" content="#0b0f14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230b0f14'/><text x='5' y='22' font-family='monospace' font-size='16' fill='%235af78e'>&gt;_</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css?v=2026-11-12c">
+  <!-- Apply saved theme before paint to avoid a flash. -->
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+
+  <!-- Top navigation: plain-language links + terminal-mode switch + theme toggle -->
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark">&gt;_</span> Girish</a>
+    <nav id="tabs">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#work">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="right">
+      <button id="term-btn" class="term-switch" type="button" title="Explore this site from a Linux-style command line">
+        <span class="mono">&gt;_</span><span class="label"> Terminal mode</span>
+      </button>
+      <button id="theme-btn" class="icon-btn" type="button" aria-label="Switch light / dark theme">◐</button>
+      <button id="menu-btn" class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero: who I am in one glance, with clear next steps -->
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <p class="eyebrow reveal">MS Information Science · The University of Texas at Austin</p>
+        <h1 class="reveal">Hi, I'm Girish.<br>I build <span class="accent">AI agents</span> and the systems that keep them running.</h1>
+        <p class="lede reveal">
+          I'm a graduate researcher at UT Austin's <strong>Swarm Lab</strong>, teaching AI to find answers inside long videos.
+          Before that, I spent three years as a software engineer at <strong>Standard Chartered Bank</strong>, making its banking APIs faster, safer and cheaper to run.
+        </p>
+        <div class="cta reveal">
+          <a class="btn primary" href="#projects">See my work →</a>
+          <details class="resume-menu">
+            <summary class="btn">Resume ▾</summary>
+            <div class="menu">
+              <a href="resume-ml.pdf" target="_blank" rel="noopener">AI / ML research version</a>
+              <a href="resume-swe.pdf" target="_blank" rel="noopener">Software engineering version</a>
+            </div>
+          </details>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+        <p class="term-hint reveal">Prefer the command line? <button type="button" class="link-btn" data-open-terminal>Try terminal mode <span class="mono">&gt;_</span></button></p>
+      </div>
+
+      <!-- Photo in a small "window" frame — the Linux flavour, readable by anyone -->
+      <figure class="hero-photo window reveal">
+        <div class="titlebar"><span class="dots"><i></i><i></i><i></i></span><span class="title">girish.jpg</span></div>
+        <img src="assets/img/headshot.jpg" alt="Portrait of Girishkaushik Karthikeyan" width="768" height="753">
+      </figure>
+    </section>
+
+    <!-- Quick facts strip: numbers count up when visible -->
+    <section class="facts reveal" aria-label="Highlights">
+      <div><strong data-count="3" data-suffix=" yrs">0</strong><span>software engineer in banking</span></div>
+      <div><strong data-count="3" data-prefix="$" data-suffix="M+">0</strong><span>yearly costs cut at Standard Chartered</span></div>
+      <div><strong data-count="4" data-decimals="1" data-suffix=" GPA">0</strong><span>at UT Austin</span></div>
+      <div><strong data-count="11">0</strong><span>projects to explore below</span></div>
+    </section>
+
+    <!-- Sections are filled from data/projects.js by assets/js/home.js -->
+    <section class="section" id="about"></section>
+    <section class="section" id="research"></section>
+    <section class="section" id="work"></section>
+    <section class="section" id="projects"></section>
+    <section class="section" id="contact"></section>
+  </main>
+
+  <!-- Terminal mode: full-screen Linux-style shell over the page (opt-in) -->
+  <div class="term-mode" id="term-mode" role="dialog" aria-modal="true" aria-label="Terminal mode" hidden>
+    <div class="window term-window">
+      <div class="titlebar">
+        <span class="dots"><button type="button" class="dot-close" data-close-terminal aria-label="Close terminal mode"></button><i></i><i></i></span>
+        <span class="title">girish@ut-austin: ~ — zsh</span>
+        <button type="button" class="exit-btn" data-close-terminal>exit ✕</button>
+      </div>
+      <div class="term" id="term" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <script src="data/projects.js?v=2026-11-12c"></script>
+  <script src="assets/js/home.js?v=2026-11-12c"></script>
+  <script src="assets/js/terminal.js?v=2026-11-12c"></script>
+  <script src="assets/js/animate.js?v=2026-11-12c"></script>
+</body>
+</html>
